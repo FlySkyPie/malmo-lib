@@ -26,7 +26,7 @@ HunterGate(
     LOCAL
 )
 
-project(Makmo)
+project(Malmo)
 
 hunter_add_package(Boost COMPONENTS chrono date_time filesystem iostreams program_options regex system thread)
 hunter_add_package(ZLIB)
@@ -145,3 +145,5 @@ endif()
 
 target_link_libraries( Malmo ${MALMO_LINK_LIBRARIES} )
 target_include_directories(Malmo PRIVATE include)
+
+add_subdirectory( test )
